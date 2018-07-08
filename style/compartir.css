@@ -1,0 +1,56 @@
+#intro label{
+    font-size: large;
+    font-weight: 200;	
+}
+fieldset{
+	border-color: cornflowerblue;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 1.3em;
+}
+form input{
+	width: 100%;
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+    border-color: cornflowerblue;
+    font-family: Calibri;
+    font-size: initial;
+    padding: 0.2em;	
+}
+#txtInfo{
+	background: lightgrey;
+}
+
+.correo{
+
+}
+
+.optional{
+
+}
+textarea{
+	max-width: 100%;
+    width: 100%;
+    height: 90px;
+    max-height: 100%;
+    border-color: cornflowerblue;
+    font-family: Calibri;
+    font-size: initial;
+    padding: 0.2em;
+}
+#btEnviar{
+    background: #FF0040;
+    font-size: large;
+    color: white;
+    font-weight: 500;
+    border-color: brown;
+}
+
+@media (min-width:768px){
+
+}
+
+/*Maquinas de escritorio*/
+@media (min-width: 1024px){
+
+}

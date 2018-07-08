@@ -1,0 +1,351 @@
+/*GRID VIEW*/
+@import url(https://fonts.googleapis.com/css?family=Erica+One);
+* {
+    box-sizing: border-box;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    /*border: 1px solid red;*/
+}
+/*FIN GRID VIEW*/
+/*GENERALES*/
+html{
+	background-color: #E0E0F8;
+	position: relative;
+}
+
+header{
+	background-image: linear-gradient(#8181F7 0%, #a6c1ee 100%);
+	height: 60px;
+	
+}
+p{
+	font-family: Calibri;
+	font-size: 1em;
+}
+
+#titulo{
+	display: flex;
+    text-align: center;
+}
+/*#titulo label{
+	color: white;
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}*/
+
+/**/
+#titulo{
+height: 100%;
+  overflow: hidden;
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+#slashed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+#slashTop,
+#slashBot {
+  font: 40px/100px arial;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  color: #fff;
+}
+#slashTop:before,
+#slashBot:before {
+  content: attr(title);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+#slashTop {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  right: 0;
+  bottom: 50%;
+}
+#slashTop:before {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+}
+#slashBot {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 5px;
+  bottom: 0;
+}
+#slashBot:before {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+/**/
+
+#headNav{
+	background: #8181F7;
+	display: grid;
+}
+nav{
+	width: 100%;
+	margin-top: 0em;
+	background-image: linear-gradient(#a6c1ee 0%,#8181F7 100%);
+	position: sticky;
+}
+
+nav a{
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+nav p{
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: white;
+	padding-right: 10px; 
+}
+/*Forma del marcador de los items*/
+nav ul {
+	list-style-type: none;
+	list-style-position: outside;
+	display:flex;
+	flex-direction: row;
+	/*line-height: 20px;*/
+	padding-left: 1em;
+}
+nav li {
+	font-family: Calibri;
+	font-size: 1em;
+	padding-right: 40px;
+}
+nav li p{
+	text-align:word-spacing: center;
+}
+#divBuscador{
+	margin: 1em 0.5em;
+	margin-top: 1.5em;
+	padding: 0.5em;
+	background-color: #B4B4F3;
+}
+#buscador{
+	height: 29px;
+	width: 80%;
+}
+
+#btBuscar{
+	background-color: #8181F7;
+	border-radius: 1em;
+    border-color: whitesmoke;
+    float: right;
+}
+
+#btBuscar img{
+	width: 20px;
+}
+section{
+	margin-top: 0.5em;
+}
+h1{
+	font-weight: bold;
+    font-size: 2em;
+}
+#intro{
+	padding: 1em;
+}
+
+/*Mostrar media*/
+.dosSeries{
+	width: 100%;
+	display: block;
+}
+.divSerieIzq{
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+    padding: 2em;
+    padding-bottom: 1em;
+    background-color: #B4B4F3;
+}
+.divSerieDer{
+	display: block;	
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+    padding: 2em;
+    padding-bottom: 1em;
+    background-color: #B4B4F3;
+    margin-top: 1em;
+}	
+#inicioSeries img{
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 550px;
+}
+
+h2{
+	font-weight: bold;
+    
+    font-size: 1.6em;
+}
+.descSerie{
+    font-size: 1.2em;
+}
+
+.btVerMas{
+	width: 100%;
+    border-radius: 1em;
+    font-size: larger;
+    font-family: Calibri;
+    font-weight: 400;
+    background-color: #295CD1;
+    color: whitesmoke;
+}
+
+/*Footer*/
+footer{
+	height: 80px;
+	
+	bottom: 0;
+  	width: 100%;
+  	background: #8181F7;
+}
+
+footer p{
+	font-family:  sans-serif;
+	color: white;
+	font-size: 1em;
+	text-align: center;
+	alignment-baseline: central;
+}
+footer #copyright{
+	width: 50%;
+	max-width: 20px;
+}
+
+/*Solo en contacto.html*/
+#mapa {
+    height: 400px;
+    width: 95%;
+    margin: auto;
+    border-width: initial;
+    border-radius: 1em;
+    border-color: white;
+    border-style: groove;
+}
+
+/*Tablets*/
+@media (min-width:768px){
+	#intro {
+	   display: inline-block;
+	   margin-left: 1em;
+	}
+	header{
+		height: 100px;	
+	}
+	h1{
+		font-size: 2.4em;
+	}
+	h2{
+	    font-size: 1.5em;
+	    margin: 0.5em;
+	}
+	p{
+		font-size: 1.1em;
+	    padding: 0.2em;
+	    margin: 0em 0.5em;
+	}
+	#titulo label{
+		font-size: 3em;
+	}
+	.divSerieIzq{
+		float: left;
+		clear: left;
+		width: 40%;
+		display: block;	
+	}
+	.divSerieDer{
+		float: right;
+		clear: right;
+		width: 40%;
+		display: block;	
+	}
+	.dosSeries{
+		display: flex;
+	}
+	section{
+		margin-top: 0em;
+		margin-bottom: 6em;
+	}
+	.btVerMas{
+	width: 100%;
+    float: right;
+    padding: 0.3em 0.7em;
+	}
+	footer{
+		display: inline-block;
+		margin: 0em;
+	}
+	html{
+		position: 
+	}
+	#slashTop,
+	#slashBot {
+		font: 60px/100px arial;
+	}
+}
+
+/*Maquinas de escritorio*/
+@media (min-width: 1024px){
+	.dosSeries{
+		display: flex;
+	}
+	.divSerieIzq{
+		float: left;
+	    width: 40%;
+	}
+	.divSerieDer{
+	    float: right;
+	    width: 40%;
+	}
+	footer{
+		position: fixed;
+	}
+}

@@ -1,0 +1,93 @@
+#inicioSeries {
+	width: 100%;
+}
+#imgGrande{
+	width: 100%;
+}
+#imgGrande img{
+	max-width: 100%;
+	border-style: double;
+    border-color: darkblue;
+}
+#divDescMedia{
+	padding: 0em 1em;
+    font-family: Calibri;
+}
+
+.importantInfo{
+	font-weight: bolder;
+}
+#descMedia{
+
+}
+#actores{
+
+}
+#actores li{
+
+}
+
+
+@media (min-width:768px){
+	#intro {
+	    padding: 1em;
+	    margin: auto;
+	    display: table;
+	}
+	#inicioSeries {
+		margin-top: 1.5em;
+		display: inline-block;
+	}
+	#imgGrande{
+		float: left;
+	    width: auto;
+	    margin-right: 2em;
+	    margin-bottom: 2em;
+	}
+	#imgGrande img{
+	}
+	#divDescMedia{
+	    display: contents;
+	    width: auto;
+	}
+
+	.importantInfo{
+	
+	}
+	#descMedia{
+
+	}
+	#actores{
+
+	}
+	#actores li{
+
+	}
+}
+
+/*Maquinas de escritorio*/
+@media (min-width: 1024px){
+	#inicioSeries {
+
+	}
+	#imgGrande{
+	}
+	#imgGrande img{
+	}
+	#divDescMedia{
+
+	}
+
+	.importantInfo{
+	
+	}
+	#descMedia{
+
+	}
+	#actores{
+
+	}
+	#actores li{
+
+	}
+}

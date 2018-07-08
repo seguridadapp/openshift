@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SeriesLibres</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/base.css">
+	<link rel="stylesheet" type="text/css" href="style/search.css">
+	<link rel="icon" type="image/x-icons" href="img/logo.jpg">
+	<script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="scripts/tviso.js"></script>
+	<script type="text/javascript" src="scripts/search.js"></script>
+</head>
+<body>
+	<div id="headNav">
+		<header>
+			<div class="col-12" id="titulo">
+				<div id="slashed">
+				  	<div id="slashTop" title="SeriesLibres"></div>
+				  	<div id="slashBot" title="SeriesLibres"></div>
+				</div>
+			</div>
+		</header>
+		<nav class="col-12">
+			<div id="menu">
+				<ul id="menuLista">
+					<li><a href="index.html"> Inicio</a></li>
+					<li><a href="buscar.html"> Busqueda avanzada</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</div>
+			<div id="divBuscador">
+				<input id="buscador" type="search" size="20">
+				<button id="btBuscar"><img src="img/searchIcon.png"></button>
+			</div>
+		</nav>
+	</div>	
+	<div id="section">
+		<section>
+			<div id="intro">
+				<h1>Busqueda avanzada</h1>
+				<p>¡Encuentra lo que quieres ver!</p>
+					
+				<div id="busqAvanzada">
+					<div id="anoGenre">
+
+						<div id="ano">
+							<label>Año</label><input id="anio" type="number" value="">
+						</div>
+						<div id="divGenero">
+							<label>Género</label>
+							<select id="genero">
+								<option value="none">Desconocido</option>
+								<option value="Action">Acción</option>
+								<option value="News">Actualidad</option>
+								<option value="Animation">Animación</option>
+								<option value="Adventure">Aventura</option>
+								<option value="Biography">Biografico</option>
+								<option value="Sci-fi">Ciencia ficción</option>
+								<option value="Film-noir">Cine negro</option>
+								<option value="Comedy">Comedia</option>
+								<option value="Short">Cortometraje</option>
+								<option value="Crime">Crimen</option>
+								<option value="Sport">Deportes</option>
+								<option value="Documentary">Documental</option>
+								<option value="Drama">Drama</option>
+								<option value="Family">Familia</option>
+								<option value="Fantasy">Fantasía</option>
+								<option value="War">Guerra</option>
+								<option value="History">Histórico</option>
+								<option value="Horror">Horror</option>
+								<option value="Mystery">Misterio</option>
+								<option value="Music">Musica</option>
+								<option value="Musical">Musical</option>
+								<option value="Game-show">Programa de concursos</option>
+								<option value="Reality-tv">Reality show</option>
+								<option value="Romance">Romance</option>
+								<option value="Thriller">Suspenso</option>
+								<option value="Western">Western</option>
+							</select>
+						</div>
+					</div>
+					<div id="divTypeMedia">
+						<p>Tipo de medio:</p>
+						<div id="subTypeMedia">
+						<div  class="divMedia"><label for="serie">Todos </label><input checked="true" class="media" name="media" id="serie" value="0" type="radio"></div>
+						<div class="divMedia"><label for="serie">Serie </label><input class="media" name="media" id="serie" value="1" type="radio"></div>
+						<div class="divMedia"><label for="movie">Pelicula </label><input class="media" name="media" id="movie" value="2" type="radio"></div>
+						<div class="divMedia"><label for="documentary">Documental </label><input class="media" name="media" id="documentary" value="3" type="radio"></div>
+						<div class="divMedia"><label for="tvshow">Show de televisión </label><input class="media" name="media" id="tvshow" value="4" type="radio"></div>
+						<!--<div class="divMedia"><label for="episode">Episodio </label><input class="media" name="media" id="episode" value="5" type="radio"></div>-->
+						</div>
+					</div>
+						<button id="btBuscarAvanzado">¡Buscar!</button>
+						<button id="btHistorial">Historial de busquedas</button>
+				</div>
+			</div>
+			<div id="inicioSeries">
+				
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div id="foot">
+			<a name="footer"></a>
+			<p id="nombre">Nicole Denon <img id="copyright" src="img/Copyright.png">&emsp; &emsp; Aplicaciones móviles 2018</p>
+			<p>Contacto: nicole.a.denon@gmail.com</p>
+		</div>
+	</footer>
+</body>
+</html>

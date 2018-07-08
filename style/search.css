@@ -1,0 +1,259 @@
+#busqAvanzada{
+	background-color: #B4B4F3;
+	margin: 0em;
+	padding: 1em;
+}
+#busqAvanzada label{
+    font-family: Calibri;
+    font-size: 1em;
+    color: black;
+    padding: 0.4em;
+
+     font-weight: 600;
+}
+#anoGenre{
+	width: 100%;
+}
+#anoGenre input{
+    width: 150px;
+    float: right;
+    border-color: cornflowerblue;
+    font-weight: bold;
+    -webkit-padding-start: 0.3em;
+}
+.btVerMas2{
+     width: 100%;
+    border-radius: 1em;
+    font-size: larger;
+    font-family: Calibri;
+    font-weight: 400;
+    background-color: #295CD1;
+    color: whitesmoke;
+}
+#divGenero{
+	margin: 1em 0em;
+}	
+#divGenero select{
+	    width: 150px;
+    float: right;
+    border-color: cornflowerblue;
+}
+#divGenero select option{
+    margin: 10px;
+    background: #D6D6F8;
+    color: #fff;
+    display: list-item;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+
+}
+#divGenero select option[value="none"]{
+	background: #7F7F9B;
+}
+
+#divTypeMedia p{
+    font-family: Calibri;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.divMedia{
+	margin: 0.4em 0em;
+}
+.divMedia input{
+    height: 17px;
+    width: 17px;
+    border-radius: 30%;
+    float: right;
+}
+
+#btBuscarAvanzado{
+    margin-top: 1em;
+    width: 100%;
+    border-radius: 1em;
+    font-size: larger;
+    font-family: Calibri;
+    font-weight: 400;
+    background-color: #7847E3;
+    border-color: white;
+    color: whitesmoke;
+}
+#btHistorial{
+    margin-top: 1em;
+    width: 100%;
+    border-radius: 1em;
+    font-size: larger;
+    font-family: Calibri;
+    font-weight: 400;
+    background-color: #7847E3;
+    border-color: white;
+    color: whitesmoke;
+}
+
+
+#listaElementos{
+	list-style-type: none;
+	list-style-position: outside;
+	/*line-height: 20px;*/
+	padding:1em;
+}
+
+.elemenBusqueda{
+	margin: 1em 0em;
+}
+.imgElem{
+	border-color: white;
+    border-width: 4px;
+    border-style: double;
+    background-color: black;
+    color: white;
+}
+.infoElem{
+	border-style: double;
+    border-width: 4px;
+    padding: 1em;
+    padding-top: 0em;
+    background-color: #B4B4F3;
+}
+.infoGenero{
+
+}
+.btCompartir{
+    width: 100%;
+    border-radius: 1em;
+    margin-top: 0.4em;
+    font-size: large;
+    font-family: Calibri;
+    font-weight: 400;
+    background-color: #04B404;
+    color: white;
+}
+
+/*Tablets*/
+@media (min-width:768px){
+    #intro {
+        padding: 1em;
+        display: table;
+    }
+	#listaElementos{
+	}
+
+	.elemenBusqueda{
+		display: flex;
+	}
+	.imgElem{
+		float: left;
+		display: inherit;
+	}
+	.imgElem img{
+		margin: auto;
+	}
+	.infoElem{
+	    float: left;
+	    width: 100%;
+	}
+	.infoGenero{
+
+	}
+    .btCompartir{
+        width: 50%;
+        float: right;
+        padding: 0.3em 0.7em;
+        margin: 0em;
+        font-size: larger;
+    }
+    .btVerMas2{
+        width: 50%;
+        float: right;
+        padding: 0.3em 0.7em;
+    }
+    #busqAvanzada label{
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    #divTypeMedia{
+        width: 45%;
+        float: left;
+        margin-top: 0em;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+    #divTypeMedia p {
+    font-size: 1.6em;
+    margin: 0em;
+}
+    #anoGenre{
+        width: 45%;
+        float: right;
+        margin: 1em;
+        margin-top: 1.95em;
+    }
+    #anoGenre input {
+        font-size: large;
+        width: 50%;
+        text-align: end;
+    }
+    #divGenero select {
+        width: 50%;
+        font-size: larger;
+        border-width: medium;
+    }
+    #busqAvanzada {
+        display: inline-block;
+        position: initial;
+    }
+    #btBuscarAvanzado{
+        margin-top: 0.4em;
+        float: right;
+        height: 50px;
+        font-weight: bolder;
+    }
+    #listaElementos button{
+        margin-top: 1em;
+    }
+    .divMedia input {
+    margin-right: 3em;
+}
+
+}
+/*Maquinas de escritorio*/
+@media (min-width: 1024px){
+    #busqAvanzada {
+        display: grid;
+    }
+    #busqAvanzada label{
+
+    }
+    #subTypeMedia{
+        float: inherit;
+        width: 100%;
+        display: flex;
+    }
+    #divTypeMedia{
+        width: 100%;
+        float: initial;
+    }
+    #divTypeMedia p {
+
+    }
+    #anoGenre{
+        margin: 1em;
+        width: -webkit-fill-available;
+        float:initial;
+    }
+    #anoGenre input {
+
+    }
+    #divGenero select {
+
+    }
+    #btBuscarAvanzado{
+        float: initial;
+        margin-top: 1em;
+        width: 100%;
+        height: auto;
+        padding: 0.5em;
+    }
+    .divMedia {
+            margin-left: auto;
+    margin-right: auto;
+    }
+}
